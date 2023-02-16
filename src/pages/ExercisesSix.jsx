@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import CustomComponent from "../components/CustomComponent"
+import CustomComponent from "../components/CustomComponent";
+import Nav from "../components/Nav";
 
 export default function ExercisesSix() {
   const [animal, _] = useState([
@@ -11,12 +12,13 @@ export default function ExercisesSix() {
     "🏇 horse",
   ]);
   return (
-    <div className="flex items-center justify-center h-screen flex-col">
+    <>
+      <Nav />
+      <div className="flex items-center justify-center h-screen flex-col">
         {animal.map((value) => {
-          return (
-            <CustomComponent value={value} />
-          );
+          return <CustomComponent value={value} />;
         })}
-    </div>
+      </div>
+    </>
   );
 }

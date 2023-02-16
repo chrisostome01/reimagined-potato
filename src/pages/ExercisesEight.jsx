@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import data from "../mocks/data"
+import Nav from "../components/Nav"
 
 export default function ExercisesEight() {
   const [cardsData, _] = useState(data)
   
 
   return (
+    <>
+    <Nav />
     <div className="flex gap-9 items-center justify-center h-screen bg-green-300">
       {
         cardsData.map((value) => (
@@ -20,5 +23,6 @@ export default function ExercisesEight() {
         ))
       }
     </div>
+    </>  
   )
 }

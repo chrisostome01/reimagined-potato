@@ -1,34 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 export default function Nav() {
   return (
     <nav className="">
       <ul className="flex items-center gap-4 text-lg m-5 font-bold absolute top-0 text-blue-500">
         <li>
-          <a href="/">Exercises one</a>
+          <Link to="/">Exercises one</Link>
         </li>
         <li>
-          <a href="/two">Exercises two</a>
+          <Link to="/two">Exercises two</Link>
         </li>
         <li>
-          <a href="/three">Exercises three</a>
+          <Link to="/three">Exercises three</Link>
         </li>
         <li>
-          <a href="/four">Exercises four</a>
+          <Link to="/four">Exercises four</Link>
         </li>
         <li>
-          <a href="/five">Exercises five</a>
+          <Link to="/five">Exercises five</Link>
         </li>
         <li>
-          <a href="/six">Exercises six</a>
+          <Link to="/six">Exercises six</Link>
         </li>
         <li>
-          <a href="/seven">Exercises seven</a>
+          <Link to="/seven">Exercises seven</Link>
         </li>
         <li>
-          <a href="/eight">Exercises eight</a>
+          <Link to="/eight">Exercises eight</Link>
         </li>
         <li>
-          <a href="/nine">Exercises nine</a>
+          <Link to="/nine">Exercises nine</Link>
         </li>
       </ul>
     </nav>

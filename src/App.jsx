@@ -1,15 +1,14 @@
-import React from 'react';
-import ExercisesOne from './pages/ExercisesOne';
-import ExercisesTwo from './pages/ExercisesTwo';
-import ExercisesThree from './pages/ExercisesThree';
-import ExercisesFour from './pages/ExercisesFour';
-import ExercisesFive from './pages/ExercisesFive';
-import ExercisesSix from './pages/ExercisesSix';
-import ExercisesSeven from './pages/ExercisesSeven';
-import ExercisesEight from './pages/ExercisesEight';
-import ExercisesNine from './pages/ExercisesNine';
-import Nav from "./components/Nav"
-import { RouterProvider, createBrowserRouter } from 'react-router-dom/dist';
+import React from "react";
+import ExercisesOne from "./pages/ExercisesOne";
+import ExercisesTwo from "./pages/ExercisesTwo";
+import ExercisesThree from "./pages/ExercisesThree";
+import ExercisesFour from "./pages/ExercisesFour";
+import ExercisesFive from "./pages/ExercisesFive";
+import ExercisesSix from "./pages/ExercisesSix";
+import ExercisesSeven from "./pages/ExercisesSeven";
+import ExercisesEight from "./pages/ExercisesEight";
+import ExercisesNine from "./pages/ExercisesNine";
+import { RouterProvider, createBrowserRouter } from "react-router-dom/dist";
 
 const router = createBrowserRouter([
   {
@@ -51,12 +50,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <>
-      <Nav />
-      <RouterProvider router={router} />
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;
